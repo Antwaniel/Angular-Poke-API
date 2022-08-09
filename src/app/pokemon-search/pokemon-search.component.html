@@ -1,0 +1,60 @@
+<div class="title">
+  <!-- <h2 >Search Pokemon</h2> -->
+   <img src="../../assets/logo.png" alt="">
+</div>
+
+
+<div class="input">
+
+
+<!-- <form (ngSubmit)="onSubmit()" #form="ngForm"> -->
+
+ <mat-form-field
+ >
+     <input
+     color="green"
+     matInput
+     #id
+
+     type="text"
+     name="pokeName"
+     (keyup.enter)="getPokemon(id.value)"
+     placeholder="Search by name or id">
+   </mat-form-field>
+
+   <button
+   mat-raised-button
+   color="green"
+   (click)="getPokemon(id.value)"
+    name="butonPoke"
+    ngDefaultControl>
+    Search</button>
+<!-- </form> -->
+ <!-- (keyup.enter)="getPokemon()" -->
+</div>
+
+
+
+<div   *ngIf="pokemon" class="main">
+
+  <div class="pokes" style="opacity: 1; background-color: #FFF;">
+
+  <img [src]="pokemon.sprites.front_default" alt="">
+
+  <span>N°{{pokemon.id}}</span>
+  <h3 >{{pokemon.name |titlecase}}</h3>
+
+  <div class="card-footer">
+    <span > {{pokemon.types[0].type.name | titlecase}}</span>
+     <span *ngIf="pokemon.types[1]"> {{pokemon.types[1].type.name |titlecase}}</span>
+
+
+
+
+  </div>
+  <span class="ability" > Ability: <b > {{ pokemon.abilities[0].ability.name }} </b>  </span>
+  <span class="ability" > Base experience: <b > {{ pokemon.base_experience }} </b>  </span>
+  </div>
+
+</div>
+

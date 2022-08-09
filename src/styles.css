@@ -1,1 +1,179 @@
-/* You can add global styles to this file, and also import other style files */
+/* General */
+/*-------------------------*/
+
+:root {
+  --red: #dd082f;
+  --dark-red: #3b020d;
+  --green: #2ff901;
+  --yellow: #ffcc02;
+  --sky: #01fbfb;
+  --orange: #ffcc02;
+  --blue: #519afb;
+  font-size: 16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+}
+
+.ability{
+  display: flex;
+  align-self: center !important;
+}
+body{
+  background-color: #519afb;
+    /* background-image: url('./assets/bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover; */
+}
+
+img{
+  cursor: pointer;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 200px;
+  height: 220px;
+  border-radius: 5px;
+  background-color: rgb(147, 31, 255);
+  cursor: pointer;
+  opacity: .7;
+}
+.pokes:hover{
+background-color: #FFF;
+  opacity: 1;
+  transition: all 0.8s;
+}
+.pokes span{
+  display: flex;
+  align-self: self-start;
+  margin-left: 6px;
+}
+
+.card-footer{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+
+nav{
+  display: flex;
+  justify-content: center;
+  /* background-color: #2ff901; */
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+  list-style: none;
+  background-color: #dd082f;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}
+li >a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+.input{
+  display: flex;
+  justify-content: center;
+}
+
+.input button{
+  height: 40px;
+}
+
+.mat-form-field-empty.mat-form-field-label {
+
+    color: rgb(0, 0, 0);
+}
+
+.mat-form-field-underline {
+    background-color: rgb(0, 0, 0);
+}
+
+input::placeholder{
+  color: #FFF;
+}
+
+.title{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title img{
+  width: 400px;
+  height: 100px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(183, 0, 255);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(179, 179, 179);  /* creates padding around scroll thumb */
+}
+
+
+pagination-controls{
+  display: flex;
+ align-self: center;
+ justify-content: center;
+ align-items: center;
+  /* text-align: center; */
+
+  /* width: 60px; */
+}
+
+.ngx-pagination li{
+  background-color: #FFF;
+  width: 40px;
+  text-align: center;
+}
+.ngx-pagination .pagination-previous {
+    width: auto;
+}
+.ngx-pagination .pagination-next{
+  width: auto;
+}
+
+
+.about-img{
+  width: 85%;
+  height: cover;
+}
