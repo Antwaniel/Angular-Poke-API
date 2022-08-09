@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   {
     path: '',
-    component: MainPageComponent,
+    component: PokedexComponent,
     pathMatch: 'full'
   },
   {
@@ -20,11 +20,6 @@ const routes: Routes = [
     path: 'pokeDetails',
     component: PokeDetailsComponent
   },
-  {
-    path: 'pokemons',
-    component: PokedexComponent
-  },
-
   {
     path: 'search',
     component: PokemonSearchComponent
